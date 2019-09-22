@@ -56,7 +56,7 @@ RSpec.describe GramsController, type: :controller do
       gram.reload
       expect(gram.message).to eq "Changed"
     end
-
+    
     it "should have http 404 error if the gram cannot be found" do
       user = FactoryBot.create(:user)
       sign_in user
