@@ -39,6 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -49,6 +52,13 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem 'bootstrap', '~> 4.3.1' 
+gem 'jquery-rails'
+gem 'simple_form'
+gem 'devise'
+gem 'carrierwave', '~> 2.0'
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
